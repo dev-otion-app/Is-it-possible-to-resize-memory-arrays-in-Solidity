@@ -15,8 +15,8 @@ contract PlayingWithArrays{
         storage_array.push(3);
     }
 
-    function request_element_in_memory(uint[] memory array, uint element) external pure returns(uint a){
-        a = array[element]; // Checks if element is less than the length (the word pointed by array). Then returns the corresponding offset if it exists.
+    function request_element_in_memory(uint[] memory array, uint index) external pure returns(uint a){
+        a = array[index]; // Checks if index is less than the length (the word pointed by array). Then returns the corresponding offset if it exists.
     }
 
     function grow_memory_array(uint[] memory array) external pure returns(uint[] memory){
